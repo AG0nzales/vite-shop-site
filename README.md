@@ -1,1 +1,1 @@
-#Static shop site using Vite React
+# Static shop site using Vite React
