@@ -1,20 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
+import MainPage from './components/MainPage'
+import './components/styles/index.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <Header />
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+        <MainPage />
     </>
   )
 }
