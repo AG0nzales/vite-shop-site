@@ -1,0 +1,46 @@
+$light-color: #f4f4f4;
+$dark-color: #2c2b2a;
+
+.main-page {
+  margin: 0 clamp(10px, 2%, 160px);
+}
+
+.menu-large {
+  display: flex;
+  gap: 3.25rem; /* equivalent to gap-10 in Tailwind */
+}
+
+@media (max-width: 640px) {
+  .menu-large {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-large {
+    display: flex;
+  }
+}
+
+.menu-small {
+  background: transparent;
+}
+
+@media (max-width: 640px) {
+  .menu-small {
+    display: block;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  /* Add styles for tablets like iPad, Samsung tablets, etc. */
+  .menu-small {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-small {
+    display: none;
+  }
+}
