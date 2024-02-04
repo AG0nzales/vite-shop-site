@@ -40,18 +40,12 @@ const Header = () => {
           </Button>
         </div>
       </div>
-      <div className="menu-small relative">
-        <button type="button" className="absolute top-1 left-0">
-          <FontAwesomeIcon
-            icon={faCookieBite}
-            className="w-10 h-10 text-red-700"
-          />
-        </button>
+      <div className="menu-small">
         {openMenu && (
           <div
-            className={`flex gap-3 transition-all duration-300 ${
+            className={`flex ml-auto gap-10 transition-all duration-300 ${
               openMenu ? "block" : "hidden"
-            } absolute top-1 right-16`}
+            }`}
           >
             <Button variant="ghost" className="p-3">
               <FontAwesomeIcon
@@ -73,10 +67,9 @@ const Header = () => {
             </Button>
           </div>
         )}
-
         <Button
           onClick={() => setOpenMenu(!openMenu)}
-          className="p-3 absolute top-1 right-0 bg-transparent hover:bg-transparent"
+          className="p-3 ml-auto shadow-lg bg-transparent hover:bg-transparent"
         >
           <FontAwesomeIcon icon={faBars} className="w-6 h-6 text-red-700" />
         </Button>

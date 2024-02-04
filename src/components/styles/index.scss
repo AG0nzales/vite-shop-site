@@ -23,12 +23,13 @@ $dark-color: #2c2b2a;
 }
 
 .menu-small {
-  background: transparent;
+  scroll-behavior: auto;
 }
 
 @media (max-width: 640px) {
   .menu-small {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 
